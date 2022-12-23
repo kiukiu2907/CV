@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;
+charset=UTF-8">
+<link rel="stylesheet"
+href="usr/share/git/ReleaseNotes.css">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Huỳnh Gia Bảo - 48.01.103.007</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #585c68;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.bold {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.semi-bold {
+  font-weight: 500;
+  font-size: 16px;
+}
+.avatar img {
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, .1);
+}
+.resume {
+  width: 900px;
+  height: auto;
+  display: flex;
+  margin: 50px auto;
+}
+
+.resume .resume_left {
+  width: 300px;
+  background: #596569;
+}
+
+.resume .resume_left .resume_profile {
+  width: 100%;
+}
+
+.resume .resume_left .resume_profile img {
+  width: 100%;
+  height: 100%;
+}
+
+.resume .resume_left .resume_content {
+  padding: 0 25px;
+}
+
+.resume .title {
+  margin-bottom: 20px;
+}
+
+.resume .resume_left .bold {
+  color: #fff;
+}
+
+.resume .resume_left .regular {
+  color: #ffffff;
+}
+
+.resume .resume_item {
+  padding: 25px 0;
+  border-bottom: 2px solid #f4a60b;
+}
+
+.resume .resume_left .resume_item:last-child,
+.resume .resume_right .resume_item:last-child {
+  border-bottom: 0px;
+}
+
+.resume .resume_left ul li {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.resume .resume_left ul li:last-child {
+  margin-bottom: 0;
+}
+.resume_profile img{
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, .1);
+}
+.resume .resume_left ul li .icon {
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  color: #f4a60b;
+  border-radius: 50%;
+  margin-right: 15px;
+  font-size: 16px;
+  position: relative;
+}
+
+.resume .icon i,
+.resume .resume_right .resume_hobby ul li i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.resume .resume_left ul li .data {
+  color: #f4a60b;
+}
+
+.resume .resume_left .resume_skills ul li {
+  display: flex;
+  margin-bottom: 10px;
+  color: #f4a60b;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resume .resume_left .resume_skills ul li .skill_name {
+  width: 25%;
+}
+
+.resume .resume_left .resume_skills ul li .skill_progress {
+  width: 60%;
+  margin: 0 5px;
+  height: 5px;
+  background: #f4a60b;
+  position: relative;
+}
+
+.resume .resume_left .resume_skills ul li .skill_per {
+  width: 15%;
+}
+
+.resume .resume_left .resume_skills ul li .skill_progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #fff;
+}
+
+.resume .resume_left .resume_social .semi-bold {
+  color: #fff;
+  margin-bottom: 3px;
+}
+
+.resume .resume_right {
+  width: 520px;
+  background: #fff;
+  padding: 25px;
+}
+
+.resume .resume_right .bold {
+  color: #f4a60b;
+}
+
+.resume .resume_right .resume_work ul,
+.resume .resume_right .resume_education ul {
+  padding-left: 40px;
+  overflow: hidden;
+}
+
+.resume .resume_right ul li {
+  position: relative;
+}
+
+.resume .resume_right ul li .date {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.resume .resume_right ul li .info {
+  margin-bottom: 20px;
+}
+
+.resume .resume_right ul li:last-child .info {
+  margin-bottom: 0;
+}
+
+.resume .resume_right .resume_work ul li:before,
+.resume .resume_right .resume_education ul li:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -25px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 2px solid #f4a60b;
+  background: white;
+}
+
+.resume .resume_right .resume_work ul li:after,
+.resume .resume_right .resume_education ul li:after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: -21px;
+  width: 2px;
+  /* height: 115px; */
+  height: 115%;
+  background: #f4a60b;
+}
+
+.resume .resume_right .resume_hobby ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume .resume_right .resume_hobby ul li {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #f4a60b;
+  border-radius: 50%;
+  position: relative;
+  color: #f4a60b;
+}
+
+.resume .resume_right .resume_hobby ul li i {
+  font-size: 30px;
+}
+
+.resume .resume_right .resume_hobby ul li:before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  right: -52px;
+  width: 50px;
+  height: 2px;
+  background: #342f2f;
+}
+
+.resume .resume_right .resume_hobby ul li:last-child:before {
+  display: none;
+}
+
+.resume_social a{
+  text-decoration: none;
+  color: rgb(255, 166, 0);
+}
+.resume{
+  position: relative;
+}
+.resume .lang{
+  position: absolute;
+  top: 20px;
+  right: 100px;
+}
+
+.lang:hover{
+  cursor: pointer;
+}
+
+.lang img{
+  width: 30px;
+}
+
+.hide{
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<div class="resume">
+<div class="resume_left">
+ <div class="resume_profile">
+   <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/320183505_1333314414095982_4774627193793286248_n.jpg?stp=dst-jpg_s206x206&_nc_cat=105&ccb=1-7&_nc_sid=aee45a&_nc_ohc=M1z7BJMkiRwAX-3tkWb&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdSLEBvBB5eGTstbXnEz0XH5bwnNulChvtY-DVdIsaYJ8w&oe=63C545A1" alt="HuynhGiaBao">
+ </div>
+ <div class="resume_content">
+   <div class="resume_item resume_info">
+     <div class="title">
+       <p class="bold">Huỳnh Gia Bảo</p>
+       <p class="regular">48.01.103.007 - SP.TIN A</p>
+       
+     </div>
+     <ul>
+        <li>
+            <div class="icon">
+                <i class='fas fa-user-circle'></i>
+            </div>
+            <div class="data">
+               Nam
+            </div>
+          </li>
+          <li>
+            <div class="icon">
+                <i class='fas fa-calendar-alt'></i>
+            </div>
+            <div class="data">
+               29/07/2004
+            </div>
+          </li>
+       <li>
+         <div class="icon">
+           <i class="fas fa-map-signs"></i>
+         </div>
+         <div class="data">
+            Thạnh Phú, Bến Tre
+         </div>
+       </li>
+       <li>
+         <div class="icon">
+           <i class="fas fa-mobile-alt"></i>
+         </div>
+         <div class="data">
+           0833 002 632
+         </div>
+       </li>
+       <li>
+         <div class="icon">
+           <i class="fas fa-envelope"></i>
+         </div>
+         <div class="data">
+           hgiabao2907@gmail.com
+         </div>
+       </li>
+     </ul>
+   </div>
+   
+   <div class="resume_item resume_skills">
+     <div class="title">
+       <p class="bold">Kỹ năng</p>
+     </div>
+     <ul>
+        <li>
+            <div class="skill_name">
+              Giao tiếp
+            </div>
+            <div class="skill_progress">
+              <span style="width: 85%;"></span>
+            </div>
+            <div class="skill_per">85%</div>
+          </li>
+          <li>
+            <div class="skill_name">
+              Kết bạn
+            </div>
+            <div class="skill_progress">
+              <span style="width: 70%;"></span>
+            </div>
+            <div class="skill_per">70%</div>
+          </li>
+       <li>
+         <div class="skill_name">
+           Tư duy logic
+         </div>
+         <div class="skill_progress">
+           <span style="width: 79%;"></span>
+         </div>
+         <div class="skill_per">79%</div>
+       </li>
+       <li>
+         <div class="skill_name">
+           C/C++
+         </div>
+         <div class="skill_progress">
+           <span style="width: 53%;"></span>
+         </div>
+         <div class="skill_per">53%</div>
+       </li>       
+       <li>
+         <div class="skill_name">
+           Thiết kế web
+         </div>
+         <div class="skill_progress">
+           <span style="width: 64%;"></span>
+         </div>
+         <div class="skill_per">64%</div>
+       </li>
+     </ul>
+   </div>
+   <div class="resume_item resume_social">
+     <div class="title">
+       <p class="bold">Thông tin liên lạc</p>
+     </div>
+     <ul>
+       <li>
+         <div class="icon">
+           <i class="fab fa-facebook-square"></i>
+         </div>
+         <div class="data">
+           <p><a href="https://www.facebook.com/immeanok/" >Huỳnh Gia Bảo</a>
+         </div>
+       </li>
+       <li>
+        <div class="icon">
+            <i class="fa fa-github"></i>
+        </div>
+        <div class="data">
+          <p><a href="https://github.com/kiukiu2907" >Kiukiu2907</a>
+        </div>
+      </li>
+      <li>
+        <div class="icon">
+            <i class="material-icons">phone_in_talk</i>
+        </div>
+        <div class="data">
+          <p><a href="" >0833002632</a>
+        </div>
+      </li>
+     </ul>
+   </div>
+ </div>
+</div>
+<div class="resume_right">
+<div class="resume_item resume_about">
+    <div class="title">
+       <p class="bold">Giới thiệu</p>
+     </div>
+    <p> Tôi tên Huỳnh Gia Bảo hiện là sinh viên năm nhất khoa Công Nghệ Thông Tin trường Đại Học Sư Phạm Thành Phố Hồ Chí Minh. Lý do tôi chọn và có đam mê với ngành nghề này vì từ nhỏ ba mẹ tôi đã cho tôi cơ hội tiếp xúc với máy tính rất nhiều vì vậy tôi rất hứng thú với những thứ liên quan với máy tính. 
+        </p>
+</div>
+<div class="resume_item resume_work">
+    <div class="title">
+       <p class="bold">Học Vấn</p>
+     </div>
+    <ul>
+      <li>
+            <div class="date">2019-2022</div> 
+            <div class="info">
+                 <p class="semi-bold">THPT</p> 
+                 <div class="resume_item resume_social">
+                  <ul>
+                    <li>
+                      <div class="data">
+                        <p><a href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+THPT+L%C3%AA+Ho%C3%A0i+%C4%90%C3%B4n/@9.9316717,106.5234133,17z/data=!3m1!4b1!4m5!3m4!1s0x31a01def3c469153:0xde27672f8137e6af!8m2!3d9.9316717!4d106.525602?hl=vi" >Lê Hoài Đôn</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="date">2022-Now</div> 
+            <div class="info">
+                 <p class="semi-bold">Đại học</p> 
+                 <div class="resume_item resume_social">
+                  <ul>
+                    <li>
+                      <div class="data">
+                        <p><a href="https://www.google.com/maps/place/%C4%90%E1%BA%A1i+h%E1%BB%8Dc+S%C6%B0+Ph%E1%BA%A1m/@10.7609868,106.6804055,17z/data=!3m1!4b1!4m5!3m4!1s0x31752f1b8e6575c3:0x48d253bde1931e59!8m2!3d10.760997!4d106.6825901?hl=vi" >Sư Phạm Thành Phố Hồ Chí Minh</a>
+                      </div>
+                    </li>
+                  </ul>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="resume_item resume_education">
+  <div class="title">
+       <p class="bold"></p>
+     </div>
+  <ul>
+        <li>
+            <div class="date">Mục Tiêu</div> 
+            <div class="info">
+              <p>-Nắm thật chắc kiến thức được học ở trường lớp và học thêm, tìm hiểu, đọc sách chuyên ngành để có thể tự tin về kiến thức chuyên môn của bản thân
+              <br>
+                -Có ích cho mọi người và xã hội, tự do trong tài chính, tự chủ các vấn đề của bản thân
+                <br>
+                -Tích cực trau dồi vốn ngoại ngữ, đặc biệt là Tiếng Anh, Tiếng Trung, Nhật,...
+                <br>
+                -Được học tập và làm việc ở môi trường chuyên nghiệp, năng động, mọi người đoàn kết, giúp đỡ lẫn nhau
+              </p>
+            </div>
+        </li>
+        <li>
+          <div class="date">ĐIỂM MẠNH</div>
+          <div class="info">
+                 <p>-Siêng năng, chăm chỉ, có ý chí cầu tiến
+                  <br>
+                  -Có thể giải quyết các bài toán trong thời gian ngắn
+                  <br>
+                  -Chịu được áp lực ở nhiều môi trường</p>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="resume_item resume_hobby">
+  <div class="title">
+       <p class="bold">Sở thích</p>
+     </div>
+   <ul>
+     <li><i class="fas fa-book"></i></li>
+     <li><i class="fas fa-gamepad"></i></li>
+     <li><i class="fas fa-music"></i></li>
+     <li><i class='fas fa-pizza-slice'></i></li>
+     
+  </ul>
+</div>
+</div>
+</div>
+
+</body>
+</html>
